@@ -1,1 +1,55 @@
-hum hum hum
+NNLM Data Warehouse--The Network of the National Library of Medicine Data Warehouse: 
+
+The Data Warehouse stores NNLM data on subaward projects, activities conducted by NNLM staff and subawardees, and participants in NNLM activities from the early 2000s to the present.
+
+subawardees--another org
+
+NEC: National Evaluation Center--evaluates and improves NNLM programs
+
+Data Warehouse Diagram Analysis: (C:\Users\16262\Desktop\NCDS-NEC_Data_Internship\NNLM_Data_Warehouse_Diagram_edited.png)
+
+Projects: subaward projects
+
+Reports: details about the projects, status and analysis
+
+Contacts: people who are the liasons for an organization
+
+Organizations: entities in charge of the projects
+
+Project_PartnerOrganization: links projects to the org in charge
+
+StaffActivities and SubawardActivities
+
+Projects vs activities?
+
+SELECT Title FROM StaffActivities, SubawardActivities, Projects
+
+Organizations --> RegionsOffices --> Projects --> SubawardActivities
+
+RegionsOffices --> StaffActivities
+
+
+
+To Compare:
+
+Examples:
+Come up with your own research questions. Some examples include:
+What are the differences in project types / activitiy types / etc. between regions?
+What is the distribution of activity types?
+Which states have the most projects / activities?
+What type of activities have the most participants?
+What subaward activities are the most popular in each region?
+
+Staff and SubawardActivities
+
+- Average Number of Participants over time (NumberofParticipants per StartDate year)
+- Demographic and Activity
+
+- Types of Activities with the most NonNLMFundingAmount
+- Zip with the most NonNLMFundingAmount
+- NonNLMFundingAmount -- related to ActivityHowSuccessfulID?
+- what about OtherCost?
+- FundingType to NonNLMFundingAMount
+- Activity_IssueInterest?
+how is success of activity determined?
+
